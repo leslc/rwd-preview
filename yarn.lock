@@ -4,14 +4,14 @@
 
 accepts@~1.3.3:
   version "1.3.5"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/accepts/-/accepts-1.3.5.tgz#eb777df6011723a3b14e8a72c0805c8e86746bd2"
+  resolved "https://registry.npmjs.org/accepts/-/accepts-1.3.5.tgz#eb777df6011723a3b14e8a72c0805c8e86746bd2"
   dependencies:
     mime-types "~2.1.18"
     negotiator "0.6.1"
 
 align-text@^0.1.1, align-text@^0.1.3:
   version "0.1.4"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/align-text/-/align-text-0.1.4.tgz#0cd90a561093f35d0a99256c22b7069433fad117"
+  resolved "https://registry.npmjs.org/align-text/-/align-text-0.1.4.tgz#0cd90a561093f35d0a99256c22b7069433fad117"
   dependencies:
     kind-of "^3.0.2"
     longest "^1.0.1"
@@ -19,30 +19,30 @@ align-text@^0.1.1, align-text@^0.1.3:
 
 amdefine@>=0.0.4:
   version "1.0.1"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
+  resolved "https://registry.npmjs.org/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
 
 array-flatten@1.1.1:
   version "1.1.1"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/array-flatten/-/array-flatten-1.1.1.tgz#9a5f699051b1e7073328f2a008968b64ea2955d2"
+  resolved "https://registry.npmjs.org/array-flatten/-/array-flatten-1.1.1.tgz#9a5f699051b1e7073328f2a008968b64ea2955d2"
 
 async@^1.4.0:
   version "1.5.2"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
+  resolved "https://registry.npmjs.org/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
 
 balanced-match@^1.0.0:
   version "1.0.0"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
+  resolved "https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
 
 brace-expansion@^1.1.7:
   version "1.1.11"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/brace-expansion/-/brace-expansion-1.1.11.tgz#3c7fcbf529d87226f3d2f52b966ff5271eb441dd"
+  resolved "https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.11.tgz#3c7fcbf529d87226f3d2f52b966ff5271eb441dd"
   dependencies:
     balanced-match "^1.0.0"
     concat-map "0.0.1"
 
 bunyan@1.8.5:
   version "1.8.5"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/bunyan/-/bunyan-1.8.5.tgz#0d619e83005fb89070f5f47982fc1bf00600878a"
+  resolved "https://registry.npmjs.org/bunyan/-/bunyan-1.8.5.tgz#0d619e83005fb89070f5f47982fc1bf00600878a"
   optionalDependencies:
     dtrace-provider "~0.8"
     moment "^2.10.6"
@@ -51,18 +51,18 @@ bunyan@1.8.5:
 
 camelcase@^1.0.2:
   version "1.2.1"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/camelcase/-/camelcase-1.2.1.tgz#9bb5304d2e0b56698b2c758b08a3eaa9daa58a39"
+  resolved "https://registry.npmjs.org/camelcase/-/camelcase-1.2.1.tgz#9bb5304d2e0b56698b2c758b08a3eaa9daa58a39"
 
 center-align@^0.1.1:
   version "0.1.3"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/center-align/-/center-align-0.1.3.tgz#aa0d32629b6ee972200411cbd4461c907bc2b7ad"
+  resolved "https://registry.npmjs.org/center-align/-/center-align-0.1.3.tgz#aa0d32629b6ee972200411cbd4461c907bc2b7ad"
   dependencies:
     align-text "^0.1.3"
     lazy-cache "^1.0.3"
 
 cliui@^2.1.0:
   version "2.1.0"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/cliui/-/cliui-2.1.0.tgz#4b475760ff80264c762c3a1719032e91c7fea0d1"
+  resolved "https://registry.npmjs.org/cliui/-/cliui-2.1.0.tgz#4b475760ff80264c762c3a1719032e91c7fea0d1"
   dependencies:
     center-align "^0.1.1"
     right-align "^0.1.1"
@@ -70,78 +70,78 @@ cliui@^2.1.0:
 
 concat-map@0.0.1:
   version "0.0.1"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
+  resolved "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
 
 content-disposition@0.5.1:
   version "0.5.1"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/content-disposition/-/content-disposition-0.5.1.tgz#87476c6a67c8daa87e32e87616df883ba7fb071b"
+  resolved "https://registry.npmjs.org/content-disposition/-/content-disposition-0.5.1.tgz#87476c6a67c8daa87e32e87616df883ba7fb071b"
 
 content-type@~1.0.2:
   version "1.0.4"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/content-type/-/content-type-1.0.4.tgz#e138cc75e040c727b1966fe5e5f8c9aee256fe3b"
+  resolved "https://registry.npmjs.org/content-type/-/content-type-1.0.4.tgz#e138cc75e040c727b1966fe5e5f8c9aee256fe3b"
 
 cookie-parser@1.4.3:
   version "1.4.3"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/cookie-parser/-/cookie-parser-1.4.3.tgz#0fe31fa19d000b95f4aadf1f53fdc2b8a203baa5"
+  resolved "https://registry.npmjs.org/cookie-parser/-/cookie-parser-1.4.3.tgz#0fe31fa19d000b95f4aadf1f53fdc2b8a203baa5"
   dependencies:
     cookie "0.3.1"
     cookie-signature "1.0.6"
 
 cookie-signature@1.0.6:
   version "1.0.6"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/cookie-signature/-/cookie-signature-1.0.6.tgz#e303a882b342cc3ee8ca513a79999734dab3ae2c"
+  resolved "https://registry.npmjs.org/cookie-signature/-/cookie-signature-1.0.6.tgz#e303a882b342cc3ee8ca513a79999734dab3ae2c"
 
 cookie@0.3.1:
   version "0.3.1"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/cookie/-/cookie-0.3.1.tgz#e7e0a1f9ef43b4c8ba925c5c5a96e806d16873bb"
+  resolved "https://registry.npmjs.org/cookie/-/cookie-0.3.1.tgz#e7e0a1f9ef43b4c8ba925c5c5a96e806d16873bb"
 
 debug@~2.2.0:
   version "2.2.0"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/debug/-/debug-2.2.0.tgz#f87057e995b1a1f6ae6a4960664137bc56f039da"
+  resolved "https://registry.npmjs.org/debug/-/debug-2.2.0.tgz#f87057e995b1a1f6ae6a4960664137bc56f039da"
   dependencies:
     ms "0.7.1"
 
 decamelize@^1.0.0:
   version "1.2.0"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
+  resolved "https://registry.npmjs.org/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
 
 depd@~1.1.0:
   version "1.1.2"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/depd/-/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
+  resolved "https://registry.npmjs.org/depd/-/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
 
 destroy@~1.0.4:
   version "1.0.4"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/destroy/-/destroy-1.0.4.tgz#978857442c44749e4206613e37946205826abd80"
+  resolved "https://registry.npmjs.org/destroy/-/destroy-1.0.4.tgz#978857442c44749e4206613e37946205826abd80"
 
 dtrace-provider@~0.8:
   version "0.8.6"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/dtrace-provider/-/dtrace-provider-0.8.6.tgz#428a223afe03425d2cd6d6347fdf40c66903563d"
+  resolved "https://registry.npmjs.org/dtrace-provider/-/dtrace-provider-0.8.6.tgz#428a223afe03425d2cd6d6347fdf40c66903563d"
   dependencies:
     nan "^2.3.3"
 
 ee-first@1.1.1:
   version "1.1.1"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
+  resolved "https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
 encodeurl@~1.0.1:
   version "1.0.2"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/encodeurl/-/encodeurl-1.0.2.tgz#ad3ff4c86ec2d029322f5a02c3a9a606c95b3f59"
+  resolved "https://registry.npmjs.org/encodeurl/-/encodeurl-1.0.2.tgz#ad3ff4c86ec2d029322f5a02c3a9a606c95b3f59"
 
 escape-html@~1.0.3:
   version "1.0.3"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/escape-html/-/escape-html-1.0.3.tgz#0258eae4d3d0c0974de1c169188ef0051d1d1988"
+  resolved "https://registry.npmjs.org/escape-html/-/escape-html-1.0.3.tgz#0258eae4d3d0c0974de1c169188ef0051d1d1988"
 
 etag@~1.7.0:
   version "1.7.0"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/etag/-/etag-1.7.0.tgz#03d30b5f67dd6e632d2945d30d6652731a34d5d8"
+  resolved "https://registry.npmjs.org/etag/-/etag-1.7.0.tgz#03d30b5f67dd6e632d2945d30d6652731a34d5d8"
 
 eventemitter3@1.x.x:
   version "1.2.0"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/eventemitter3/-/eventemitter3-1.2.0.tgz#1c86991d816ad1e504750e73874224ecf3bec508"
+  resolved "https://registry.npmjs.org/eventemitter3/-/eventemitter3-1.2.0.tgz#1c86991d816ad1e504750e73874224ecf3bec508"
 
 express@4.14.0:
   version "4.14.0"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/express/-/express-4.14.0.tgz#c1ee3f42cdc891fb3dc650a8922d51ec847d0d66"
+  resolved "https://registry.npmjs.org/express/-/express-4.14.0.tgz#c1ee3f42cdc891fb3dc650a8922d51ec847d0d66"
   dependencies:
     accepts "~1.3.3"
     array-flatten "1.1.1"
@@ -172,7 +172,7 @@ express@4.14.0:
 
 finalhandler@0.5.0:
   version "0.5.0"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/finalhandler/-/finalhandler-0.5.0.tgz#e9508abece9b6dba871a6942a1d7911b91911ac7"
+  resolved "https://registry.npmjs.org/finalhandler/-/finalhandler-0.5.0.tgz#e9508abece9b6dba871a6942a1d7911b91911ac7"
   dependencies:
     debug "~2.2.0"
     escape-html "~1.0.3"
@@ -182,19 +182,19 @@ finalhandler@0.5.0:
 
 foreachasync@^3.0.0:
   version "3.0.0"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/foreachasync/-/foreachasync-3.0.0.tgz#5502987dc8714be3392097f32e0071c9dee07cf6"
+  resolved "https://registry.npmjs.org/foreachasync/-/foreachasync-3.0.0.tgz#5502987dc8714be3392097f32e0071c9dee07cf6"
 
 forwarded@~0.1.0:
   version "0.1.2"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/forwarded/-/forwarded-0.1.2.tgz#98c23dab1175657b8c0573e8ceccd91b0ff18c84"
+  resolved "https://registry.npmjs.org/forwarded/-/forwarded-0.1.2.tgz#98c23dab1175657b8c0573e8ceccd91b0ff18c84"
 
 fresh@0.3.0:
   version "0.3.0"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/fresh/-/fresh-0.3.0.tgz#651f838e22424e7566de161d8358caa199f83d4f"
+  resolved "https://registry.npmjs.org/fresh/-/fresh-0.3.0.tgz#651f838e22424e7566de161d8358caa199f83d4f"
 
 glob@^6.0.1:
   version "6.0.4"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/glob/-/glob-6.0.4.tgz#0f08860f6a155127b2fadd4f9ce24b1aab6e4d22"
+  resolved "https://registry.npmjs.org/glob/-/glob-6.0.4.tgz#0f08860f6a155127b2fadd4f9ce24b1aab6e4d22"
   dependencies:
     inflight "^1.0.4"
     inherits "2"
@@ -204,7 +204,7 @@ glob@^6.0.1:
 
 handlebars@4.0.5:
   version "4.0.5"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/handlebars/-/handlebars-4.0.5.tgz#92c6ed6bb164110c50d4d8d0fbddc70806c6f8e7"
+  resolved "https://registry.npmjs.org/handlebars/-/handlebars-4.0.5.tgz#92c6ed6bb164110c50d4d8d0fbddc70806c6f8e7"
   dependencies:
     async "^1.4.0"
     optimist "^0.6.1"
@@ -214,14 +214,14 @@ handlebars@4.0.5:
 
 hbs@4.0.1:
   version "4.0.1"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/hbs/-/hbs-4.0.1.tgz#4bfd98650dc8c9dac44b3ca9adf9c098e8bc33b6"
+  resolved "https://registry.npmjs.org/hbs/-/hbs-4.0.1.tgz#4bfd98650dc8c9dac44b3ca9adf9c098e8bc33b6"
   dependencies:
     handlebars "4.0.5"
     walk "2.3.9"
 
 http-errors@~1.5.0, http-errors@~1.5.1:
   version "1.5.1"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/http-errors/-/http-errors-1.5.1.tgz#788c0d2c1de2c81b9e6e8c01843b6b97eb920750"
+  resolved "https://registry.npmjs.org/http-errors/-/http-errors-1.5.1.tgz#788c0d2c1de2c81b9e6e8c01843b6b97eb920750"
   dependencies:
     inherits "2.0.3"
     setprototypeof "1.0.2"
@@ -229,105 +229,105 @@ http-errors@~1.5.0, http-errors@~1.5.1:
 
 http-proxy@1.16.2:
   version "1.16.2"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/http-proxy/-/http-proxy-1.16.2.tgz#06dff292952bf64dbe8471fa9df73066d4f37742"
+  resolved "https://registry.npmjs.org/http-proxy/-/http-proxy-1.16.2.tgz#06dff292952bf64dbe8471fa9df73066d4f37742"
   dependencies:
     eventemitter3 "1.x.x"
     requires-port "1.x.x"
 
 inflight@^1.0.4:
   version "1.0.6"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/inflight/-/inflight-1.0.6.tgz#49bd6331d7d02d0c09bc910a1075ba8165b56df9"
+  resolved "https://registry.npmjs.org/inflight/-/inflight-1.0.6.tgz#49bd6331d7d02d0c09bc910a1075ba8165b56df9"
   dependencies:
     once "^1.3.0"
     wrappy "1"
 
 inherits@2, inherits@2.0.3:
   version "2.0.3"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
+  resolved "https://registry.npmjs.org/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
 
 ipaddr.js@1.4.0:
   version "1.4.0"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/ipaddr.js/-/ipaddr.js-1.4.0.tgz#296aca878a821816e5b85d0a285a99bcff4582f0"
+  resolved "https://registry.npmjs.org/ipaddr.js/-/ipaddr.js-1.4.0.tgz#296aca878a821816e5b85d0a285a99bcff4582f0"
 
 is-buffer@^1.1.5:
   version "1.1.6"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/is-buffer/-/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
+  resolved "https://registry.npmjs.org/is-buffer/-/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
 
 kind-of@^3.0.2:
   version "3.2.2"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/kind-of/-/kind-of-3.2.2.tgz#31ea21a734bab9bbb0f32466d893aea51e4a3c64"
+  resolved "https://registry.npmjs.org/kind-of/-/kind-of-3.2.2.tgz#31ea21a734bab9bbb0f32466d893aea51e4a3c64"
   dependencies:
     is-buffer "^1.1.5"
 
 lazy-cache@^1.0.3:
   version "1.0.4"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/lazy-cache/-/lazy-cache-1.0.4.tgz#a1d78fc3a50474cb80845d3b3b6e1da49a446e8e"
+  resolved "https://registry.npmjs.org/lazy-cache/-/lazy-cache-1.0.4.tgz#a1d78fc3a50474cb80845d3b3b6e1da49a446e8e"
 
 longest@^1.0.1:
   version "1.0.1"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/longest/-/longest-1.0.1.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
+  resolved "https://registry.npmjs.org/longest/-/longest-1.0.1.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
 
 media-typer@0.3.0:
   version "0.3.0"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
+  resolved "https://registry.npmjs.org/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
 
 merge-descriptors@1.0.1:
   version "1.0.1"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/merge-descriptors/-/merge-descriptors-1.0.1.tgz#b00aaa556dd8b44568150ec9d1b953f3f90cbb61"
+  resolved "https://registry.npmjs.org/merge-descriptors/-/merge-descriptors-1.0.1.tgz#b00aaa556dd8b44568150ec9d1b953f3f90cbb61"
 
 methods@~1.1.2:
   version "1.1.2"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/methods/-/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
+  resolved "https://registry.npmjs.org/methods/-/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
 
 mime-db@~1.33.0:
   version "1.33.0"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/mime-db/-/mime-db-1.33.0.tgz#a3492050a5cb9b63450541e39d9788d2272783db"
+  resolved "https://registry.npmjs.org/mime-db/-/mime-db-1.33.0.tgz#a3492050a5cb9b63450541e39d9788d2272783db"
 
 mime-types@~2.1.18:
   version "2.1.18"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/mime-types/-/mime-types-2.1.18.tgz#6f323f60a83d11146f831ff11fd66e2fe5503bb8"
+  resolved "https://registry.npmjs.org/mime-types/-/mime-types-2.1.18.tgz#6f323f60a83d11146f831ff11fd66e2fe5503bb8"
   dependencies:
     mime-db "~1.33.0"
 
 mime@1.3.4:
   version "1.3.4"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/mime/-/mime-1.3.4.tgz#115f9e3b6b3daf2959983cb38f149a2d40eb5d53"
+  resolved "https://registry.npmjs.org/mime/-/mime-1.3.4.tgz#115f9e3b6b3daf2959983cb38f149a2d40eb5d53"
 
 "minimatch@2 || 3":
   version "3.0.4"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
+  resolved "https://registry.npmjs.org/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
   dependencies:
     brace-expansion "^1.1.7"
 
 minimist@0.0.8:
   version "0.0.8"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/minimist/-/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
+  resolved "https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
 
 minimist@~0.0.1:
   version "0.0.10"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/minimist/-/minimist-0.0.10.tgz#de3f98543dbf96082be48ad1a0c7cda836301dcf"
+  resolved "https://registry.npmjs.org/minimist/-/minimist-0.0.10.tgz#de3f98543dbf96082be48ad1a0c7cda836301dcf"
 
 mkdirp@~0.5.1:
   version "0.5.1"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
+  resolved "https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
   dependencies:
     minimist "0.0.8"
 
 moment@^2.10.6:
   version "2.21.0"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/moment/-/moment-2.21.0.tgz#2a114b51d2a6ec9e6d83cf803f838a878d8a023a"
+  resolved "https://registry.npmjs.org/moment/-/moment-2.21.0.tgz#2a114b51d2a6ec9e6d83cf803f838a878d8a023a"
 
 ms@0.7.1:
   version "0.7.1"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/ms/-/ms-0.7.1.tgz#9cd13c03adbff25b65effde7ce864ee952017098"
+  resolved "https://registry.npmjs.org/ms/-/ms-0.7.1.tgz#9cd13c03adbff25b65effde7ce864ee952017098"
 
 ms@0.7.2:
   version "0.7.2"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/ms/-/ms-0.7.2.tgz#ae25cf2512b3885a1d95d7f037868d8431124765"
+  resolved "https://registry.npmjs.org/ms/-/ms-0.7.2.tgz#ae25cf2512b3885a1d95d7f037868d8431124765"
 
 mv@~2:
   version "2.1.1"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/mv/-/mv-2.1.1.tgz#ae6ce0d6f6d5e0a4f7d893798d03c1ea9559b6a2"
+  resolved "https://registry.npmjs.org/mv/-/mv-2.1.1.tgz#ae6ce0d6f6d5e0a4f7d893798d03c1ea9559b6a2"
   dependencies:
     mkdirp "~0.5.1"
     ncp "~2.0.0"
@@ -335,93 +335,93 @@ mv@~2:
 
 nan@^2.3.3:
   version "2.9.2"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/nan/-/nan-2.9.2.tgz#f564d75f5f8f36a6d9456cca7a6c4fe488ab7866"
+  resolved "https://registry.npmjs.org/nan/-/nan-2.9.2.tgz#f564d75f5f8f36a6d9456cca7a6c4fe488ab7866"
 
 ncp@~2.0.0:
   version "2.0.0"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/ncp/-/ncp-2.0.0.tgz#195a21d6c46e361d2fb1281ba38b91e9df7bdbb3"
+  resolved "https://registry.npmjs.org/ncp/-/ncp-2.0.0.tgz#195a21d6c46e361d2fb1281ba38b91e9df7bdbb3"
 
 negotiator@0.6.1:
   version "0.6.1"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
+  resolved "https://registry.npmjs.org/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
 object-path@0.9.2:
   version "0.9.2"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/object-path/-/object-path-0.9.2.tgz#0fd9a74fc5fad1ae3968b586bda5c632bd6c05a5"
+  resolved "https://registry.npmjs.org/object-path/-/object-path-0.9.2.tgz#0fd9a74fc5fad1ae3968b586bda5c632bd6c05a5"
 
 on-finished@~2.3.0:
   version "2.3.0"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/on-finished/-/on-finished-2.3.0.tgz#20f1336481b083cd75337992a16971aa2d906947"
+  resolved "https://registry.npmjs.org/on-finished/-/on-finished-2.3.0.tgz#20f1336481b083cd75337992a16971aa2d906947"
   dependencies:
     ee-first "1.1.1"
 
 once@^1.3.0:
   version "1.4.0"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/once/-/once-1.4.0.tgz#583b1aa775961d4b113ac17d9c50baef9dd76bd1"
+  resolved "https://registry.npmjs.org/once/-/once-1.4.0.tgz#583b1aa775961d4b113ac17d9c50baef9dd76bd1"
   dependencies:
     wrappy "1"
 
 optimist@^0.6.1:
   version "0.6.1"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/optimist/-/optimist-0.6.1.tgz#da3ea74686fa21a19a111c326e90eb15a0196686"
+  resolved "https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz#da3ea74686fa21a19a111c326e90eb15a0196686"
   dependencies:
     minimist "~0.0.1"
     wordwrap "~0.0.2"
 
 parseurl@~1.3.1:
   version "1.3.2"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/parseurl/-/parseurl-1.3.2.tgz#fc289d4ed8993119460c156253262cdc8de65bf3"
+  resolved "https://registry.npmjs.org/parseurl/-/parseurl-1.3.2.tgz#fc289d4ed8993119460c156253262cdc8de65bf3"
 
 path-is-absolute@^1.0.0:
   version "1.0.1"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/path-is-absolute/-/path-is-absolute-1.0.1.tgz#174b9268735534ffbc7ace6bf53a5a9e1b5c5f5f"
+  resolved "https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.1.tgz#174b9268735534ffbc7ace6bf53a5a9e1b5c5f5f"
 
 path-to-regexp@0.1.7:
   version "0.1.7"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/path-to-regexp/-/path-to-regexp-0.1.7.tgz#df604178005f522f15eb4490e7247a1bfaa67f8c"
+  resolved "https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-0.1.7.tgz#df604178005f522f15eb4490e7247a1bfaa67f8c"
 
 proxy-addr@~1.1.2:
   version "1.1.5"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/proxy-addr/-/proxy-addr-1.1.5.tgz#71c0ee3b102de3f202f3b64f608d173fcba1a918"
+  resolved "https://registry.npmjs.org/proxy-addr/-/proxy-addr-1.1.5.tgz#71c0ee3b102de3f202f3b64f608d173fcba1a918"
   dependencies:
     forwarded "~0.1.0"
     ipaddr.js "1.4.0"
 
 qs@6.2.0:
   version "6.2.0"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/qs/-/qs-6.2.0.tgz#3b7848c03c2dece69a9522b0fae8c4126d745f3b"
+  resolved "https://registry.npmjs.org/qs/-/qs-6.2.0.tgz#3b7848c03c2dece69a9522b0fae8c4126d745f3b"
 
 range-parser@~1.2.0:
   version "1.2.0"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/range-parser/-/range-parser-1.2.0.tgz#f49be6b487894ddc40dcc94a322f611092e00d5e"
+  resolved "https://registry.npmjs.org/range-parser/-/range-parser-1.2.0.tgz#f49be6b487894ddc40dcc94a322f611092e00d5e"
 
 repeat-string@^1.5.2:
   version "1.6.1"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/repeat-string/-/repeat-string-1.6.1.tgz#8dcae470e1c88abc2d600fff4a776286da75e637"
+  resolved "https://registry.npmjs.org/repeat-string/-/repeat-string-1.6.1.tgz#8dcae470e1c88abc2d600fff4a776286da75e637"
 
 requires-port@1.x.x:
   version "1.0.0"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
+  resolved "https://registry.npmjs.org/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
 
 right-align@^0.1.1:
   version "0.1.3"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/right-align/-/right-align-0.1.3.tgz#61339b722fe6a3515689210d24e14c96148613ef"
+  resolved "https://registry.npmjs.org/right-align/-/right-align-0.1.3.tgz#61339b722fe6a3515689210d24e14c96148613ef"
   dependencies:
     align-text "^0.1.1"
 
 rimraf@~2.4.0:
   version "2.4.5"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/rimraf/-/rimraf-2.4.5.tgz#ee710ce5d93a8fdb856fb5ea8ff0e2d75934b2da"
+  resolved "https://registry.npmjs.org/rimraf/-/rimraf-2.4.5.tgz#ee710ce5d93a8fdb856fb5ea8ff0e2d75934b2da"
   dependencies:
     glob "^6.0.1"
 
 safe-json-stringify@~1:
   version "1.1.0"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/safe-json-stringify/-/safe-json-stringify-1.1.0.tgz#bd2b6dad1ebafab3c24672a395527f01804b7e19"
+  resolved "https://registry.npmjs.org/safe-json-stringify/-/safe-json-stringify-1.1.0.tgz#bd2b6dad1ebafab3c24672a395527f01804b7e19"
 
 send@0.14.1:
   version "0.14.1"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/send/-/send-0.14.1.tgz#a954984325392f51532a7760760e459598c89f7a"
+  resolved "https://registry.npmjs.org/send/-/send-0.14.1.tgz#a954984325392f51532a7760760e459598c89f7a"
   dependencies:
     debug "~2.2.0"
     depd "~1.1.0"
@@ -439,7 +439,7 @@ send@0.14.1:
 
 send@0.14.2:
   version "0.14.2"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/send/-/send-0.14.2.tgz#39b0438b3f510be5dc6f667a11f71689368cdeef"
+  resolved "https://registry.npmjs.org/send/-/send-0.14.2.tgz#39b0438b3f510be5dc6f667a11f71689368cdeef"
   dependencies:
     debug "~2.2.0"
     depd "~1.1.0"
@@ -457,7 +457,7 @@ send@0.14.2:
 
 serve-static@~1.11.1:
   version "1.11.2"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/serve-static/-/serve-static-1.11.2.tgz#2cf9889bd4435a320cc36895c9aa57bd662e6ac7"
+  resolved "https://registry.npmjs.org/serve-static/-/serve-static-1.11.2.tgz#2cf9889bd4435a320cc36895c9aa57bd662e6ac7"
   dependencies:
     encodeurl "~1.0.1"
     escape-html "~1.0.3"
@@ -466,36 +466,36 @@ serve-static@~1.11.1:
 
 setprototypeof@1.0.2:
   version "1.0.2"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/setprototypeof/-/setprototypeof-1.0.2.tgz#81a552141ec104b88e89ce383103ad5c66564d08"
+  resolved "https://registry.npmjs.org/setprototypeof/-/setprototypeof-1.0.2.tgz#81a552141ec104b88e89ce383103ad5c66564d08"
 
 source-map@^0.4.4:
   version "0.4.4"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/source-map/-/source-map-0.4.4.tgz#eba4f5da9c0dc999de68032d8b4f76173652036b"
+  resolved "https://registry.npmjs.org/source-map/-/source-map-0.4.4.tgz#eba4f5da9c0dc999de68032d8b4f76173652036b"
   dependencies:
     amdefine ">=0.0.4"
 
 source-map@~0.5.1:
   version "0.5.7"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
+  resolved "https://registry.npmjs.org/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
 
 "statuses@>= 1.3.1 < 2":
   version "1.4.0"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/statuses/-/statuses-1.4.0.tgz#bb73d446da2796106efcc1b601a253d6c46bd087"
+  resolved "https://registry.npmjs.org/statuses/-/statuses-1.4.0.tgz#bb73d446da2796106efcc1b601a253d6c46bd087"
 
 statuses@~1.3.0, statuses@~1.3.1:
   version "1.3.1"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/statuses/-/statuses-1.3.1.tgz#faf51b9eb74aaef3b3acf4ad5f61abf24cb7b93e"
+  resolved "https://registry.npmjs.org/statuses/-/statuses-1.3.1.tgz#faf51b9eb74aaef3b3acf4ad5f61abf24cb7b93e"
 
 type-is@~1.6.13:
   version "1.6.16"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/type-is/-/type-is-1.6.16.tgz#f89ce341541c672b25ee7ae3c73dee3b2be50194"
+  resolved "https://registry.npmjs.org/type-is/-/type-is-1.6.16.tgz#f89ce341541c672b25ee7ae3c73dee3b2be50194"
   dependencies:
     media-typer "0.3.0"
     mime-types "~2.1.18"
 
 uglify-js@^2.6:
   version "2.8.29"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/uglify-js/-/uglify-js-2.8.29.tgz#29c5733148057bb4e1f75df35b7a9cb72e6a59dd"
+  resolved "https://registry.npmjs.org/uglify-js/-/uglify-js-2.8.29.tgz#29c5733148057bb4e1f75df35b7a9cb72e6a59dd"
   dependencies:
     source-map "~0.5.1"
     yargs "~3.10.0"
@@ -504,47 +504,51 @@ uglify-js@^2.6:
 
 uglify-to-browserify@~1.0.0:
   version "1.0.2"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/uglify-to-browserify/-/uglify-to-browserify-1.0.2.tgz#6e0924d6bda6b5afe349e39a6d632850a0f882b7"
+  resolved "https://registry.npmjs.org/uglify-to-browserify/-/uglify-to-browserify-1.0.2.tgz#6e0924d6bda6b5afe349e39a6d632850a0f882b7"
 
 unpipe@~1.0.0:
   version "1.0.0"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/unpipe/-/unpipe-1.0.0.tgz#b2bf4ee8514aae6165b4817829d21b2ef49904ec"
+  resolved "https://registry.npmjs.org/unpipe/-/unpipe-1.0.0.tgz#b2bf4ee8514aae6165b4817829d21b2ef49904ec"
 
 utils-merge@1.0.0:
   version "1.0.0"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/utils-merge/-/utils-merge-1.0.0.tgz#0294fb922bb9375153541c4f7096231f287c8af8"
+  resolved "https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.0.tgz#0294fb922bb9375153541c4f7096231f287c8af8"
 
 vary@~1.1.0:
   version "1.1.2"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
+  resolved "https://registry.npmjs.org/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
 
 walk@2.3.9:
   version "2.3.9"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/walk/-/walk-2.3.9.tgz#31b4db6678f2ae01c39ea9fb8725a9031e558a7b"
+  resolved "https://registry.npmjs.org/walk/-/walk-2.3.9.tgz#31b4db6678f2ae01c39ea9fb8725a9031e558a7b"
   dependencies:
     foreachasync "^3.0.0"
 
 window-size@0.1.0:
   version "0.1.0"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/window-size/-/window-size-0.1.0.tgz#5438cd2ea93b202efa3a19fe8887aee7c94f9c9d"
+  resolved "https://registry.npmjs.org/window-size/-/window-size-0.1.0.tgz#5438cd2ea93b202efa3a19fe8887aee7c94f9c9d"
 
 wordwrap@0.0.2:
   version "0.0.2"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/wordwrap/-/wordwrap-0.0.2.tgz#b79669bb42ecb409f83d583cad52ca17eaa1643f"
+  resolved "https://registry.npmjs.org/wordwrap/-/wordwrap-0.0.2.tgz#b79669bb42ecb409f83d583cad52ca17eaa1643f"
 
 wordwrap@~0.0.2:
   version "0.0.3"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/wordwrap/-/wordwrap-0.0.3.tgz#a3d5da6cd5c0bc0008d37234bbaf1bed63059107"
+  resolved "https://registry.npmjs.org/wordwrap/-/wordwrap-0.0.3.tgz#a3d5da6cd5c0bc0008d37234bbaf1bed63059107"
 
 wrappy@1:
   version "1.0.2"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
+  resolved "https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
 
 yargs@~3.10.0:
   version "3.10.0"
-  resolved "https://artifactory.tlcinternal.com/artifactory/api/npm/npm-virtual/yargs/-/yargs-3.10.0.tgz#f7ee7bd857dd7c1d2d38c0e74efbd681d1431fd1"
+  resolved "https://registry.npmjs.org/yargs/-/yargs-3.10.0.tgz#f7ee7bd857dd7c1d2d38c0e74efbd681d1431fd1"
   dependencies:
     camelcase "^1.0.2"
     cliui "^2.1.0"
     decamelize "^1.0.0"
     window-size "0.1.0"
+
+yarn@1.3.2:
+  version "1.3.2"
+  resolved "https://registry.npmjs.org/yarn/-/yarn-1.3.2.tgz#5939762581b5b4ddcd3418c0f6be42df3aee195f"
