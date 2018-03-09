@@ -19,8 +19,13 @@ module.exports = function(req, res) {
 
   log.info({url: req.originalUrl, queryUrl: req.query.url}, 'PREVIEW-PAGE: Page requested');
 
-  // this server's domain (may change depending on where deployed)
-  var proxyDomain = req.protocol + '://' + req.get('host');
+
+  // this server's domain (may change depending on where deployed).  if heroku, force https
+  var proxyProtocol = req.protocol;
+  if (req.get('host').indexOf('herokuapp.com') !== -1) {
+    proxyProtocol = 'https';
+  }
+  var proxyDomain = proxyProtocol + '://' + req.get('host');
 
   // requestedURL read from URL query string or rwdPreviewHost cookie
   var originalDomain = requestedUrl.protocol + '//' + requestedUrl.host; // url object protocol has end colon
