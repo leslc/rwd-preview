@@ -3,11 +3,18 @@ var url = require('url');
 
 module.exports = function(req, res) {
 
-  var requestedUrl = req.query.url || req.cookies.rwdPreviewHost || 'http://www.google.com';
+  var requestedUrl = req.query.url || req.cookies.rwdPreviewHost || 'https://www.google.com';
 
-  // make sure url starts with "http://" "https://" or "//""
+  // if user didn't add http or https, add it
   if (!requestedUrl.match(/^(https?:)?\/\//)) {
-    requestedUrl = 'http://' + requestedUrl;
+    requestedUrl = 'https://' + requestedUrl;
+  }
+
+  requestedUrl = url.parse(requestedUrl);
+
+  // if the server is https, make sure requestedUrl also has https
+  if (req.protocol === 'https') {
+    requestedUrl.protocol = 'https:'; // url object protocol has end colon
   }
 
   log.info({url: req.originalUrl, queryUrl: req.query.url}, 'PREVIEW-PAGE: Page requested');
@@ -16,8 +23,7 @@ module.exports = function(req, res) {
   var proxyDomain = req.protocol + '://' + req.get('host');
 
   // requestedURL read from URL query string or rwdPreviewHost cookie
-  requestedUrl = url.parse(requestedUrl);
-  var originalDomain = requestedUrl.protocol + '//' + requestedUrl.host; // protocol returns ':' here
+  var originalDomain = requestedUrl.protocol + '//' + requestedUrl.host; // url object protocol has end colon
   var path = requestedUrl.path;
 
   // set cookie for proxy middleware to use
