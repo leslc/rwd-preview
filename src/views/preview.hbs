@@ -124,7 +124,7 @@
   </p>
   <p class="ppi-desc">If the url fails to load, use a <a href="https://chrome.google.com/webstore/detail/requestly-redirect-url-mo/mdnleldcmiljblolnjhpnblkcekpdkpa">Chrome extension</a> to remove response headers "X-Frame-Options" and "Content-Security-Policy".</p>
   {{#each screens}}
-    <div class="screen" style="display: none" {{#if this.ppi}}data-ppi="{{this.ppi}}"{{/if}}>
+    <div class="screen" style="display: none" data-screen {{#if this.ppi}}data-ppi="{{this.ppi}}"{{/if}}>
       <div class="screen__name">{{this.name}}
         <span class="screen__range">
           <a
@@ -162,6 +162,7 @@
   <script>
     var $iframes = $('iframe');
     var $urlInput = $('[data-url-input]');
+    var $allScreens = $('[data-screen]');
     var $scaledScreens = $('[data-ppi]');
     var $ppiInput = $('[data-ppi-input]');
     var $scaleLinks = $('[data-scale-link]');
@@ -248,7 +249,7 @@
       // when first iframe loads, frame all frames in
       if (!initialFadeIn) {
         initialFadeIn = true;
-        $scaledScreens.fadeIn(1000);
+        $allScreens.fadeIn(1000);
       }
 
       try {
@@ -281,7 +282,7 @@
     setTimeout(function() {
       if (!initialFadeIn) {
         initialFadeIn = true;
-        $scaledScreens.fadeIn(1000);
+        $allScreens.fadeIn(1000);
       }
     }, 1000);
   </script>

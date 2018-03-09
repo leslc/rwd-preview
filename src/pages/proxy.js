@@ -10,9 +10,14 @@ proxy.on('error', function(e) {
 });
 
 proxy.on('proxyRes', function(proxyRes, req, res) {
+  delete proxyRes.headers['access-control-allow-origin'];
   proxyRes.headers['Access-Control-Allow-Origin'] = '*';
-  proxyRes.headers['Content-Security-Policy'] = 'content \'upgrade-insecure-requests\';';
+
+  delete proxyRes.headers['content-security-policy'];
+  proxyRes.headers['Content-Security-Policy'] = 'upgrade-insecure-requests';
+
   delete proxyRes.headers['X-Frame-Options'];
+  delete proxyRes.headers['x-frame-options'];
 });
 
 module.exports = function(req, res) {
