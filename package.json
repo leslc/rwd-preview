@@ -1,0 +1,27 @@
+{
+  "name": "rwd-preview",
+  "version": "1.0.0",
+  "description": "Preview and explore website with responsive previews",
+  "main": "src/app.js",
+  "engines": {
+    "node": "^4.5.0"
+  },
+  "scripts": {
+    "start": "node src/app.js",
+    "build": "npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:leslc/rwd-preview.git"
+  },
+  "author": "Leslie Chan",
+  "license": "Copyright",
+  "dependencies": {
+    "bunyan": "1.8.5",
+    "cookie-parser": "1.4.3",
+    "express": "4.14.0",
+    "hbs": "4.0.1",
+    "http-proxy": "1.16.2",
+    "object-path": "0.9.2"
+  }
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+  <title>rwdPreview - {{title}}</title>
+  <meta name="description" content="Responsive web design preview tool">
+  <style>
+    body {
+      font-family: HelveticaNeue, Arial;
+      background-color: #000;
+      color: #DDD;
+      text-align: center;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+
+    .page-name {
+      text-align: center;
+      display: block;
+      font-size: 16px;
+      margin: 20px auto 0;
+      color: orange;
+      background-color: black;
+      border: solid 2px #222;
+      padding: 5px;
+    }
+
+    .page-name:hover {
+      cursor: text;
+      border: solid 2px #333;
+    }
+
+    .page-name:focus {
+      background-color: #333;
+      outline: none;
+    }
+
+    .screen {
+      display: inline-block;
+      text-align: left;
+      vertical-align: top;
+      margin: 10px;
+      background-color: #222;
+    }
+
+    .screen__name {
+      margin: 15px;
+      font-size: 20px;
+    }
+
+    [data-screen-to-scale] .screen__name {
+      font-size: 26px;
+    }
+
+    .screen__range {
+      float: right;
+      padding-top: 3px;
+      font-weight: normal;
+      font-size: 14px;
+    }
+
+    [data-screen-to-scale] .screen__range {
+      font-size: 20px;
+    }
+
+    .screen__range .active {
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .screen__range-link {
+      color: #FFF;
+      cursor: pointer;
+    }
+
+    .scale-link {
+      cursor: pointer;
+    }
+
+    .scale-link.active {
+      color: orange;
+      text-decoration: none;
+    }
+
+    .scale-100 {
+    }
+
+    .scale-60 {
+      transform: scale(0.60, 0.60);
+      margin: -50px;
+    }
+
+    .scale-70 {
+      transform: scale(0.70, 0.70);
+      margin: -30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="title">rwdPreview - now you're testing with gas</a>
+  <input type="text" data-page-name class="page-name" value="{{host}}"> {{!-- path added later --}}
+
+  <p>For phone sizes, select the scale that matches the device:
+    <a class="scale-link active" data-set-scale-link data-scale-size="60">60%</a> -
+    <a class="scale-link" data-set-scale-link data-scale-size="70">70%</a> -
+    <a class="scale-link" data-set-scale-link data-scale-size="100">100%</a>
+  </p>
+
+  {{#each screens}}
+    <div class="screen {{#if this.scale}}scale-60{{/if}}" {{#if this.scale}}data-screen-to-scale{{/if}}>
+      <div class="screen__name">{{this.name}}
+        <span class="screen__range">
+          <a
+            data-set-width-link
+            data-iframe="{{this.name}}"
+            data-width="{{this.minWidth}}"
+            data-type="min"
+            class="screen__range-link active">
+              {{this.minWidth}}
+          </a> -
+          <a
+            data-set-width-link
+            data-iframe="{{this.name}}"
+            data-width="{{this.maxWidth}}"
+            data-type="max"
+            class="screen__range-link">
+              {{this.maxWidth}}px
+          </a>
+          {{#if this.scale}}&nbsp;&nbsp;SCALED{{/if}}
+        </span>
+      </div>
+      <iframe
+        src="{{{@root/serverHost}}}{{{@root/path}}}"
+        id="{{this.name}}"
+        width="{{this.minWidth}}"
+        height="{{this.height}}"
+        frameborder="0"
+        >
+      </iframe>
+    </div>
+  {{/each}}
+
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js" integrity="sha256-7LkWEzqTdpEfELxcZZlS6wAx5Ff13zZ83lYO2/ujj7g="
+    crossorigin="anonymous"></script>
+  <script>
+
+    // input box is auto width to content
+    var widthCalcSpan = $('<span class="page-name">').hide().appendTo(document.body);
+    $('[data-page-name]').on('keyup', function(e) {
+      var $this = $(this);
+      if (e.which === 13) {
+        $this.blur();
+        updateFrames($this.val());
+        return;
+      }
+      var textWidth = widthCalcSpan.text($this.val()).width() + 30;
+      $this.width(textWidth);
+    });
+    $('[data-page-name]').trigger('keyup');     // initial resize of input
+
+    var iframes = $('iframe');
+    var host = '{{host}}';
+    var currentUrl;     // will be set by the first iframe loaded
+
+    // pixel links
+    $('[data-set-width-link]').click(function() {
+      var $this = $(this),
+          width = $this.data('width'),
+          iframeId = $this.data('iframe'),
+          minOrMax = $this.data('type');
+
+      $('#' + iframeId).attr('width', width);
+      $('[data-set-width-link][data-type="min"]').toggleClass('active', minOrMax === 'min');
+      $('[data-set-width-link][data-type="max"]').toggleClass('active', minOrMax === 'max');
+    });
+
+    // scale links
+    $('[data-set-scale-link]').click(function() {
+      var $this = $(this),
+          scaleSize = $this.data('scale-size');
+
+      $('[data-set-scale-link]').removeClass('active');
+      $this.addClass('active');
+      $('[data-screen-to-scale]')
+        .removeClass('scale-60 scale-70')
+        .addClass('scale-' + scaleSize);
+    });
+
+    // iframe loading
+    iframes.load(function() {
+      try {
+        var loadedUrl = this.contentWindow.location.href;
+        var loadedFrame = this.id;
+      } catch (e) {
+        console.log(e, 'Cross-origin restrictions does not allow access to automatically update other iframes');
+        return;
+      }
+
+      var updatePageName = loadedUrl !== currentUrl;
+      var updateOtherIframes = currentUrl && updatePageName;
+
+      // update global page name
+      if (updatePageName) {
+        currentUrl = loadedUrl;
+        $('[data-page-name]').val(host + this.contentWindow.location.pathname).trigger('keyup');   // no url params
+      }
+
+      // change url of other iframes
+      if (updateOtherIframes) {
+        updateFrames(loadedUrl, loadedFrame);
+      }
+    });
+
+    function updateFrames(url, recentlyLoadedFrame) {
+      iframes.each(function(index, iframe) {
+        if (iframe.id !== recentlyLoadedFrame && iframe.src !== url) {
+          iframe.src = url;
+        }
+      });
+    }
+  </script>
+</body>
+</html>

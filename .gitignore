@@ -1,0 +1,13 @@
+/node_modules
+!src/node_modules
+/target
+.idea
+*.out*
+*.log*
+*.iml
+npm-debug.log
+phantomjsdriver.log
+coverage
+/config/local.js
+.eslintrc*
+Profile
