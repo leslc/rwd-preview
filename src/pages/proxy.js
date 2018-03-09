@@ -9,6 +9,12 @@ proxy.on('error', function(e) {
   log.error({badHost: badHost}, 'PROXY-PAGE: ERROR Failed to reach destination');
 });
 
+proxy.on('proxyRes', function(proxyRes, req, res) {
+  proxyRes.headers['Access-Control-Allow-Origin'] = '*';
+  proxyRes.headers['Content-Security-Policy'] = 'content \'upgrade-insecure-requests\';';
+  delete proxyRes.headers['X-Frame-Options'];
+});
+
 module.exports = function(req, res) {
 
     var proxiedDomain = req.cookies.rwdPreviewHost;

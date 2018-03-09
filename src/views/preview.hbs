@@ -276,6 +276,14 @@
     // trigger default ppi of 94
     $ppiInput.val('94');
     scaleScreens();
+
+    // fade after 1 second if iframes are taking too long to load
+    setTimeout(function() {
+      if (!initialFadeIn) {
+        initialFadeIn = true;
+        $scaledScreens.fadeIn(1000);
+      }
+    }, 1000);
   </script>
 </body>
 </html>
