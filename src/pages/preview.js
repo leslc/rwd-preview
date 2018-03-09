@@ -33,7 +33,7 @@ module.exports = function(req, res) {
 
   // set cookie for proxy middleware to use
   if (originalDomain !== req.cookies.rwdPreviewHost) {
-    res.cookie('rwdPreviewHost', originalDomain);
+    res.cookie('rwdPreviewHost', originalDomain, {maxAge: 1000 * 60 * 2}); // allow 2 min to load page
     log.info({originalDomain: originalDomain}, 'PREVIEW-PAGE: Set rwdPreviewHost cookie');
   }
 
