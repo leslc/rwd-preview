@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+  <title>Responsive Preview</title>
+  <style>
+    body {
+      font-family: HelveticaNeue, Arial;
+      background-color: #000000;
+      color: #efefef;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    a,
+    a:visited {
+      cursor: pointer;
+      text-decoration: none;
+      color: #efefef;
+      border-bottom: solid 1px #efefef;
+    }
+
+    a:hover, a:active {
+      color: orange;
+      border-bottom: solid 1px orange;
+    }
+
+    .page-name {
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    .url-input {
+      font-size: 30px;
+      text-align: center;
+      color: orange;
+      background-color: #222;
+      border-radius: 7px;
+      padding: 5px 10px;
+      margin-left: 15px;
+      min-width: 200px;
+      transition-property: width;
+      transition-duration: 0.2s;
+    }
+
+    .url-input:focus {
+      background-color: #efefef;
+    }
+  </style>
+</head>
+<body>
+  <div data-page-name class="page-name">
+    <p>Welcome to RWD Preview</p>
+    URL<input class='url-input' data-url-input size=1>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js" integrity="sha256-7LkWEzqTdpEfELxcZZlS6wAx5Ff13zZ83lYO2/ujj7g="
+    crossorigin="anonymous"></script>
+  <script>
+    var $urlInput = $('[data-url-input]');
+
+    // on keyup catches backspace
+    $urlInput.on('keyup keydown', function(e) {
+      var url = this.value;
+
+      if (e && e.which === 13) {
+        window.location.href = '/preview?url=' + url;
+        return;
+      }
+      this.size = Math.max(1, url.length); // can't be 0
+    });
+
+    $urlInput.focus();
+  </script>
+</body>
+</html>

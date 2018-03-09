@@ -1,39 +1,60 @@
 <!DOCTYPE html>
 <html lang="en" xml:lang="en">
 <head>
-  <title>rwdPreview - {{title}}</title>
-  <meta name="description" content="Responsive web design preview tool">
+  <title>Responsive Preview</title>
   <style>
     body {
       font-family: HelveticaNeue, Arial;
-      background-color: #000;
-      color: #DDD;
+      background-color: #000000;
+      color: #efefef;
       text-align: center;
+      font-size: 18px;
     }
 
-    a {
-      text-decoration: underline;
+    a,
+    a:visited {
+      cursor: pointer;
+      text-decoration: none;
+      color: #efefef;
+      border-bottom: solid 1px #efefef;
+    }
+
+    a:hover, a:active {
+      color: orange;
+      border-bottom: solid 1px orange;
     }
 
     .page-name {
+      padding-top: 20px;
       text-align: center;
-      display: block;
-      font-size: 16px;
-      margin: 20px auto 0;
+    }
+
+    .url-input {
+      font-size: 30px;
+      text-align: center;
       color: orange;
-      background-color: black;
-      border: solid 2px #222;
-      padding: 5px;
+      background-color: #222;
+      border-radius: 7px;
+      padding: 5px 10px;
+      margin-left: 15px;
+      min-width: 200px;
+      transition-property: width;
+      transition-duration: 0.2s;
     }
 
-    .page-name:hover {
-      cursor: text;
-      border: solid 2px #333;
+    .url-input:focus {
+      background-color: #efefef;
     }
 
-    .page-name:focus {
-      background-color: #333;
-      outline: none;
+    .ppi-input {
+      font-size: 20px;
+      text-align: center;
+      border-radius: 5px;
+      border: solid 1px gray;
+    }
+
+    .ppi-desc {
+      font-size: 14px;
     }
 
     .screen {
@@ -41,16 +62,21 @@
       text-align: left;
       vertical-align: top;
       margin: 10px;
-      background-color: #222;
+      background-color: #222222;
+    }
+
+    .screen-transition {
+      transition-property: transform;
+      transition-duration: 0.2s;
     }
 
     .screen__name {
       margin: 15px;
       font-size: 20px;
-    }
 
-    [data-screen-to-scale] .screen__name {
-      font-size: 26px;
+      [data-ppi] & {
+        font-size: 26px;
+      }
     }
 
     .screen__range {
@@ -58,10 +84,10 @@
       padding-top: 3px;
       font-weight: normal;
       font-size: 14px;
-    }
 
-    [data-screen-to-scale] .screen__range {
-      font-size: 20px;
+      [data-ppi] & {
+        font-size: 20px;
+      }
     }
 
     .screen__range .active {
@@ -70,45 +96,35 @@
     }
 
     .screen__range-link {
-      color: #FFF;
-      cursor: pointer;
+      color: #efefef;
+    }
+
+    .screen__scale-tag {
+      display: none;
+      font-size: 14px;
+      padding: 5px 10px;
+      margin: 0 10px;
+      background-color: gray;
     }
 
     .scale-link {
       cursor: pointer;
-    }
-
-    .scale-link.active {
-      color: orange;
-      text-decoration: none;
-    }
-
-    .scale-100 {
-    }
-
-    .scale-60 {
-      transform: scale(0.60, 0.60);
-      margin: -50px;
-    }
-
-    .scale-70 {
-      transform: scale(0.70, 0.70);
-      margin: -30px;
+      margin: 0px 10px;
     }
   </style>
 </head>
 <body>
-  <div class="title">rwdPreview - now you're testing with gas</a>
-  <input type="text" data-page-name class="page-name" value="{{host}}"> {{!-- path added later --}}
-
-  <p>For phone sizes, select the scale that matches the device:
-    <a class="scale-link active" data-set-scale-link data-scale-size="60">60%</a> -
-    <a class="scale-link" data-set-scale-link data-scale-size="70">70%</a> -
-    <a class="scale-link" data-set-scale-link data-scale-size="100">100%</a>
+  <div data-page-name class="page-name">
+    <p>Welcome to RWD Preview</p>
+    URL <input class='url-input' data-url-input size={{inputSize}} value="{{originalDomain}}{{path}}">
+  </div>
+  <p>For realistic device scaling, enter monitor's PPI (pixels per inch): &nbsp; <input data-ppi-input class="ppi-input" type="text" size="4"> &nbsp; <span class="ppi-desc"><a data-clear-dpi>Clear scaling</a> - <a href="http://dpi.lv/" target="_blank">Calculator</a></span></p>
+  <p class="ppi-desc">Common PPI: &nbsp;
+    <a class="scale-link" data-scale-link data-scale-ppi="94">Dell 24" (94)</a> - <a class="scale-link" data-scale-link data-scale-ppi="109">Thunderbolt (109)</a> - <a class="scale-link" data-scale-link data-scale-ppi="113">MacBook Pro 13" (113)</a> - <a class="scale-link" data-scale-link data-scale-ppi="110">MacBook Pro 15" (110)</a>
   </p>
-
+  <p class="ppi-desc">If the url fails to load, use a <a href="https://chrome.google.com/webstore/detail/requestly-redirect-url-mo/mdnleldcmiljblolnjhpnblkcekpdkpa">Chrome extension</a> to remove response headers "X-Frame-Options" and "Content-Security-Policy".</p>
   {{#each screens}}
-    <div class="screen {{#if this.scale}}scale-60{{/if}}" {{#if this.scale}}data-screen-to-scale{{/if}}>
+    <div class="screen" style="display: none" {{#if this.ppi}}data-ppi="{{this.ppi}}"{{/if}}>
       <div class="screen__name">{{this.name}}
         <span class="screen__range">
           <a
@@ -127,11 +143,11 @@
             class="screen__range-link">
               {{this.maxWidth}}px
           </a>
-          {{#if this.scale}}&nbsp;&nbsp;SCALED{{/if}}
         </span>
+        {{#if this.ppi}}<span class="screen__scale-tag">scaled {{this.ppi}} ppi</span>{{/if}}
       </div>
       <iframe
-        src="{{{@root/serverHost}}}{{{@root/path}}}"
+        src="{{@root.proxyDomain}}{{@root.path}}"
         id="{{this.name}}"
         width="{{this.minWidth}}"
         height="{{this.height}}"
@@ -144,81 +160,122 @@
   <script src="https://code.jquery.com/jquery-1.11.3.min.js" integrity="sha256-7LkWEzqTdpEfELxcZZlS6wAx5Ff13zZ83lYO2/ujj7g="
     crossorigin="anonymous"></script>
   <script>
+    var $iframes = $('iframe');
+    var $urlInput = $('[data-url-input]');
+    var $scaledScreens = $('[data-ppi]');
+    var $ppiInput = $('[data-ppi-input]');
+    var $scaleLinks = $('[data-scale-link]');
+    var globalUrl;     // will be set by the first iframe loaded
+    var initialFadeIn = false;
 
-    // input box is auto width to content
-    var widthCalcSpan = $('<span class="page-name">').hide().appendTo(document.body);
-    $('[data-page-name]').on('keyup', function(e) {
-      var $this = $(this);
-      if (e.which === 13) {
-        $this.blur();
-        updateFrames($this.val());
+    function scaleScreens() {
+      var currentPPI = parseInt($ppiInput.val(), 10);
+      if (isNaN(currentPPI)) {
+        currentPPI = null;
+      }
+      $scaledScreens.each(function(i, elem) {
+        var $elem = $(elem);
+        var scale = 1;
+        var margin = '10px';
+
+        if (currentPPI) {
+          scale = (currentPPI / parseInt($elem.data('ppi'), 10)).toFixed(2);
+          if (scale < 1) {
+            margin = '-' + (Math.round(100 - (scale * 100)) + 20) + 'px';
+          } else {
+            margin = (scale * 100) + 'px';
+          }
+        }
+
+        $elem.css({transform: 'scale(' + scale + ',' + scale + ')', margin: margin});
+        $elem.find('.screen__scale-tag').css({display: (scale === 1 ? 'none' : 'inline-block')});
+        setTimeout(function() {
+          $elem.addClass('screen-transition'); // transition on subsequent scales
+        }, 1000);
+      });
+    }
+
+    function loadIframes(url) {
+      $iframes.each(function(index, iframe) {
+        if (iframe.contentWindow.location.href !== url) {
+          iframe.contentWindow.location = url;
+        }
+      });
+    }
+
+    $ppiInput.keydown(function(e) {
+      if (e && e.which === 13) {
+        scaleScreens();
+      }
+    });
+
+    // on keyup catches backspace
+    $urlInput.on('keyup keydown', function(e) {
+      var url = this.value;
+
+      if (e && e.which === 13) {
+        window.location.href = '/preview?url=' + url;
         return;
       }
-      var textWidth = widthCalcSpan.text($this.val()).width() + 30;
-      $this.width(textWidth);
+      this.size = Math.max(1, url.length); // can't be 0
     });
-    $('[data-page-name]').trigger('keyup');     // initial resize of input
 
-    var iframes = $('iframe');
-    var host = '{{host}}';
-    var currentUrl;     // will be set by the first iframe loaded
+    $('[data-clear-dpi]').click(function() {
+      $ppiInput.val('');
+      scaleScreens();
+    });
+
+    $scaleLinks.click(function() {
+      var ppi = $(this).data('scale-ppi');
+      $ppiInput.val(ppi);
+      scaleScreens();
+    });
 
     // pixel links
     $('[data-set-width-link]').click(function() {
-      var $this = $(this),
-          width = $this.data('width'),
-          iframeId = $this.data('iframe'),
-          minOrMax = $this.data('type');
+      var $this = $(this);
+      var width = $this.data('width');
+      var iframeId = $this.data('iframe');
+      var minOrMax = $this.data('type');
 
       $('#' + iframeId).attr('width', width);
       $('[data-set-width-link][data-type="min"]').toggleClass('active', minOrMax === 'min');
       $('[data-set-width-link][data-type="max"]').toggleClass('active', minOrMax === 'max');
     });
 
-    // scale links
-    $('[data-set-scale-link]').click(function() {
-      var $this = $(this),
-          scaleSize = $this.data('scale-size');
+    // iframe loading, refreshes other iframes as the user navigates within one
+    $iframes.on('load', function() {
+      // when first iframe loads, frame all frames in
+      if (!initialFadeIn) {
+        initialFadeIn = true;
+        $scaledScreens.fadeIn(1000);
+      }
 
-      $('[data-set-scale-link]').removeClass('active');
-      $this.addClass('active');
-      $('[data-screen-to-scale]')
-        .removeClass('scale-60 scale-70')
-        .addClass('scale-' + scaleSize);
-    });
-
-    // iframe loading
-    iframes.load(function() {
       try {
-        var loadedUrl = this.contentWindow.location.href;
-        var loadedFrame = this.id;
-      } catch (e) {
-        console.log(e, 'Cross-origin restrictions does not allow access to automatically update other iframes');
+        var thisFrameUrl = this.contentWindow.location.href;
+      } catch(e) {
+        // blocked cross origin
         return;
       }
+      var isNewUrl = globalUrl && thisFrameUrl !== globalUrl;
 
-      var updatePageName = loadedUrl !== currentUrl;
-      var updateOtherIframes = currentUrl && updatePageName;
+      if (!globalUrl || isNewUrl) {
+        globalUrl = thisFrameUrl;
 
-      // update global page name
-      if (updatePageName) {
-        currentUrl = loadedUrl;
-        $('[data-page-name]').val(host + this.contentWindow.location.pathname).trigger('keyup');   // no url params
-      }
+        // update global page name
+        var inputVal = '{{@root.originalDomain}}' + this.contentWindow.location.pathname;
+        $urlInput.val(inputVal).trigger('keydown'); // keypress to set input width
 
-      // change url of other iframes
-      if (updateOtherIframes) {
-        updateFrames(loadedUrl, loadedFrame);
+        // change url of other iframes
+        if (isNewUrl) {
+          loadIframes(thisFrameUrl);
+        }
       }
     });
 
-    function updateFrames(url, recentlyLoadedFrame) {
-      iframes.each(function(index, iframe) {
-        if (iframe.id !== recentlyLoadedFrame && iframe.src !== url) {
-          iframe.src = url;
-        }
-      });
-    }
+    // trigger default ppi of 94
+    $ppiInput.val('94');
+    scaleScreens();
   </script>
 </body>
 </html>

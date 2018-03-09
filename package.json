@@ -4,11 +4,12 @@
   "description": "Preview and explore website with responsive previews",
   "main": "src/app.js",
   "engines": {
-    "node": "^4.5.0"
+    "node": "^8.9.1"
   },
   "scripts": {
     "start": "node src/app.js",
-    "build": "npm install"
+    "build": "yarn install",
+    "nodemon": "nodemon --exec yarn start | bunyan"
   },
   "repository": {
     "type": "git",
